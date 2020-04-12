@@ -24,7 +24,7 @@ class Detail extends Component{
     render(){
         let {data} = this.props
         return (
-            <div>
+            <React.Fragment>
                 <UcNav/>
                 <div className="content">
                     {/*<div className="header clear"><h2><img src="/images/head.png" alt=""/></h2><p>作者名字</p></div>*/}
@@ -56,7 +56,7 @@ class Detail extends Component{
                         </a></li>
                     </ul>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
