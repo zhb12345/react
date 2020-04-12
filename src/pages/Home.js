@@ -25,7 +25,7 @@ class Home extends Component{
     render() {
         let {home,banner} = this.props
         return (
-            <div>
+            <React.Fragment>
                 <UcSwiper
                     data={banner}
                     to={{pathname:'/detail',apiname:'banner'}}
@@ -39,7 +39,7 @@ class Home extends Component{
                 >
                     <UcButton style={{float:'right'}} size="mini" clickHandler={this.show}>+</UcButton>
                 </Cell>)}
-            </div>
+            </React.Fragment>
         )
     }
 }
