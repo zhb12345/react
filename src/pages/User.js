@@ -16,7 +16,8 @@ class User extends Component{
         return (
             <div className={styles.content}>
                 <div className={styles.header}>
-                    <h2><img src={`${this.baseUrl}${data.icon}`} alt=""/></h2>
+                    {/*<h2><img src={`${this.baseUrl}${data.icon}`} alt=""/></h2>*/}
+                    <h2><img src={`${this.baseUrl2}${data.icon}`} alt=""/></h2>
                     <div className={styles["user-box"]}>
                         <a>{data.nikename}</a>
                         <a onClick={this.logout}>注销</a>
