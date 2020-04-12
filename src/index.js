@@ -7,13 +7,15 @@ import './utils/font';
 import './assets/css/index.css'
 
 import Auth from "./layouts/default";
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 
 import './plugins/axios'
 
-import {serverBaseUrl} from './server';
+import {serverBaseUrl,serverBaseUrl2} from './server';
 React.baseUrl = serverBaseUrl;
+React.baseUrl2 = serverBaseUrl2;
 React.Component.prototype.baseUrl=serverBaseUrl;
+React.Component.prototype.baseUrl2=serverBaseUrl2;
 
 //引入redux配置
 import store from  './plugins/redux';
